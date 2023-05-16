@@ -28,13 +28,16 @@ I followed a great youtube tutorial for the basic setup, as the course tutorial 
 - tkinker is included in the python3 library, so your can import it into your main.py file by typing `import tkinter` or `from tkinter import *` or any other specific import you need.
 - To check all is working you can type something like this:
 
-    ```
+
+```
     from tkinter import *
 
     main = Tk()
 
     main.mainloop()
 ```
+
+
 
 - When you run the app by clicking the 'Play' run button on the top left of your VSCode window, an app pop-up should appear if all is working like so:
 
