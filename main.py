@@ -1,16 +1,17 @@
 import tkinter as tk 
-# from tkinter import ttk
+# from tkinter import *
 import ttkbootstrap as ttk
 
 def convert():
 	mile_input = entry_int.get()
-	km_output = mile_input * 1.61
+	km_output = mile_input * 1.60934 # conversion value from Google
+	# Setting output string to km value
 	output_string.set(km_output)
 
 # window 
-window = ttk.Window(themename = 'darkly')
+window = ttk.Window(themename = 'darkly') # bootstrap dark theme
 window.title('Miles --> Kilometers')
-window.geometry('300x150')
+window.geometry('300x150') # set window size to 300px by 150px
 
 # title 
 title_label = ttk.Label(master = window, text = 'Miles to kilometers', font = 'Calibri 24 bold')
